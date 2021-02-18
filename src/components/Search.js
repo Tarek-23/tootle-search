@@ -1,17 +1,26 @@
 import { Button } from "@material-ui/core";
 import { MicRounded, SearchRounded } from "@material-ui/icons";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { useHistory } from "react-router";
+import { actionTypes } from "../reducer";
+import { useStateValue } from "../StateProvider";
 import "./Search.css";
 
-function Search({ hideButtons }) {
-  const [input, setInput] = useState("");
+function Search({ hideButtons = false }) {
+  const [{}, dispatch] = useStateValue();
+
+  const inputRef = useRef("");
   const history = useHistory();
 
   const search = (e) => {
     e.preventDefault();
 
-    console.log("You searched ", input);
+    console.log("You searched ", inputRef.current);
+
+    dispatch({
+      type: actionTypes.SET_SEARCH_TERM,
+      term: inputRef.current,
+    });
 
     history.push("/search");
   };
@@ -19,7 +28,10 @@ function Search({ hideButtons }) {
     <form className="search">
       <div className="search__input">
         <SearchRounded className="search__inputIcon" />
-        <input value={input} onChange={(e) => setInput(e.target.value)} />
+        <input
+          ref={inputRef}
+          onChange={(e) => (inputRef.current = e.target.value)}
+        />
         <MicRounded className="search__inputIcon" />
       </div>
 
