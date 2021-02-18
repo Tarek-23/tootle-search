@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import reducer, { initialState } from "./reducer";
 import { StateProvider } from "./StateProvider";
+require("dotenv").config();
 
 ReactDOM.render(
   <React.StrictMode>

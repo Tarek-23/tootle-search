@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Home.css";
 
 import Search from "../components/Search.js";
@@ -8,15 +8,14 @@ import { Apps } from "@material-ui/icons";
 import { Link } from "react-router-dom";
 
 function Home() {
+  useEffect(() => {
+    document.title = "Google";
+  }, []);
+
   return (
     <div className="home">
-      <h1>Homepage</h1>
-
       <div className="home__header">
-        <div className="home__headerLeft">
-          <Link to="/about">About</Link>
-          <Link to="/store">Store</Link>
-        </div>
+        <div className="home__headerLeft"></div>
 
         <div className="home__headerRight">
           {/* Link */}

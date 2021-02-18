@@ -1,6 +1,7 @@
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home.js";
+import SearchPage from "./pages/SearchPage";
 
 function App() {
   return (
@@ -14,8 +15,9 @@ function App() {
 
           {/* Search */}
           <Route path="/search">
-            <h1>Search page</h1>
+            <SearchPage />
           </Route>
+          <Route path="/ahmed_roushdy.html" />
         </Switch>
       </Router>
     </div>
