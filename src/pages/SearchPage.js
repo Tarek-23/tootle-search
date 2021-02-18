@@ -102,13 +102,13 @@ function SearchPage() {
               <a href="/ahmed_roushdy.html" className="searchPage__resultLink">
                 www.facebook.com &#8250; Acting School
               </a>
-              <Link
+              {/* <Link
                 to="/ahmed_roushdy.html"
                 target="_blank"
                 className="searchPage__resultTitle"
               >
                 <h2>أحمد رشدي - Home | Facebook</h2>
-              </Link>
+              </Link> */}
               <p className="searchPage__resultSnippet">
                 أحمد رشدي ممثل ومخرج مصري خريج المعهد العالي للفنون المسرحية
                 بالقاهرة، أخرج العديد من المسرحيات التي عرضت على خشبات مسارح

@@ -17,7 +17,7 @@ function App() {
           <Route path="/search">
             <SearchPage />
           </Route>
-          <Route path="/ahmed_roushdy.html" />
+          {/* <Route path="/ahmed_roushdy.html" /> */}
         </Switch>
       </Router>
     </div>
