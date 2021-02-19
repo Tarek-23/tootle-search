@@ -95,6 +95,10 @@
   text-decoration: underline;
 }
 
+.searchPage__resultTitle:visited {
+  color: blue;
+}
+
 .searchPage__resultTitle > h2 {
   font-weight: normal;
   font-size: 20px;

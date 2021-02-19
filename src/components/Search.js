@@ -6,7 +6,7 @@ import { actionTypes } from "../reducer";
 import { useStateValue } from "../StateProvider";
 import "./Search.css";
 
-function Search({ hideButtons = false }) {
+function Search({ hideButtons = false, initialValue }) {
   const [{}, dispatch] = useStateValue();
 
   const inputRef = useRef("");
@@ -17,10 +17,12 @@ function Search({ hideButtons = false }) {
 
     console.log("You searched ", inputRef.current);
 
-    dispatch({
-      type: actionTypes.SET_SEARCH_TERM,
-      term: inputRef.current,
-    });
+    if (inputRef.current !== null) {
+      dispatch({
+        type: actionTypes.SET_SEARCH_TERM,
+        term: inputRef.current,
+      });
+    }
 
     history.push("/search");
   };

@@ -1512,3 +1512,672 @@ export const angerManagementResponse = {
     },
   ],
 };
+
+export const gymResponse = {
+  kind: "customsearch#search",
+  url: {
+    type: "application/json",
+    template:
+      "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&relatedSite={relatedSite?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json",
+  },
+  queries: {
+    request: [
+      {
+        title: "Google Custom Search - local gyms in cairo",
+        totalResults: "2020000",
+        searchTerms: "local gyms in cairo",
+        count: 10,
+        startIndex: 1,
+        inputEncoding: "utf8",
+        outputEncoding: "utf8",
+        safe: "off",
+        cx: "1429eb85de751401e",
+      },
+    ],
+    nextPage: [
+      {
+        title: "Google Custom Search - local gyms in cairo",
+        totalResults: "2020000",
+        searchTerms: "local gyms in cairo",
+        count: 10,
+        startIndex: 11,
+        inputEncoding: "utf8",
+        outputEncoding: "utf8",
+        safe: "off",
+        cx: "1429eb85de751401e",
+      },
+    ],
+  },
+  context: {
+    title: "Tootle",
+  },
+  searchInformation: {
+    searchTime: 0.526166,
+    formattedSearchTime: "0.53",
+    totalResults: "2020000",
+    formattedTotalResults: "2,020,000",
+  },
+  items: [
+    {
+      kind: "customsearch#result",
+      title:
+        "THE BEST 10 Gyms in Cairo, GA - Last Updated February 2021 - Yelp",
+      htmlTitle:
+        "THE BEST 10 \u003cb\u003eGyms in Cairo\u003c/b\u003e, GA - Last Updated February 2021 - Yelp",
+      link: "https://www.yelp.com/search?cflt=gyms&find_loc=Cairo%2C+GA",
+      displayLink: "www.yelp.com",
+      snippet:
+        "Best Gyms in Cairo, GA - Fitness Life, Anytime Fitness, Planet Fitness, \nKarenSingletaryFitness, Factor X Fitness, The Fitness Zone, Thomasville YMCA \n& Youth ...",
+      htmlSnippet:
+        "Best \u003cb\u003eGyms in Cairo\u003c/b\u003e, GA - \u003cb\u003eFitness\u003c/b\u003e Life, Anytime \u003cb\u003eFitness\u003c/b\u003e, Planet \u003cb\u003eFitness\u003c/b\u003e, \u003cbr\u003e\nKarenSingletaryFitness, Factor X \u003cb\u003eFitness\u003c/b\u003e, The \u003cb\u003eFitness\u003c/b\u003e Zone, Thomasville YMCA \u003cbr\u003e\n&amp; Youth&nbsp;...",
+      formattedUrl:
+        "https://www.yelp.com/search?cflt=gyms&find_loc=Cairo%2C+GA",
+      htmlFormattedUrl:
+        "https://www.yelp.com/search?cflt=\u003cb\u003egyms\u003c/b\u003e&amp;find_loc=\u003cb\u003eCairo\u003c/b\u003e%2C+GA",
+      pagemap: {
+        website: [
+          {
+            name: "Yelp",
+            url: "https://www.yelp.com/",
+            sameas: "https://www.facebook.com/yelp",
+          },
+        ],
+        metatags: [
+          {
+            "theme-color": "#d32323",
+            "msapplication-tap-highlight": "no",
+            "al:ios:app_name": "Yelp",
+            viewport:
+              "width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover",
+            "al:ios:url":
+              "https://m.yelp.com/search?cflt=gyms&find_loc=Cairo%2C+GA&utm_campaign=search&utm_medium=organic&utm_source=apple",
+            "msapplication-navbutton-color": "#d32323",
+            "al:ios:app_store_id": "284910350",
+            "format-detection": "telephone=no address=no",
+          },
+        ],
+      },
+    },
+    {
+      kind: "customsearch#result",
+      title:
+        "Cairo Hotel with Gym | Cairo Marriott Hotel & Omar Khayyam Casino",
+      htmlTitle:
+        "\u003cb\u003eCairo\u003c/b\u003e Hotel with \u003cb\u003eGym\u003c/b\u003e | \u003cb\u003eCairo\u003c/b\u003e Marriott Hotel &amp; Omar Khayyam Casino",
+      link:
+        "https://www.marriott.com/hotels/hotel-information/fitness-center/caieg-cairo-marriott-hotel-and-omar-khayyam-casino/",
+      displayLink: "www.marriott.com",
+      snippet:
+        "Cairo Marriott Hotel Fitness Center. Hours: 24 Hours, 7 days a week 24/7 fitness \nroom available for all hotel in house guests with up-to-date equipment.",
+      htmlSnippet:
+        "\u003cb\u003eCairo\u003c/b\u003e Marriott Hotel \u003cb\u003eFitness\u003c/b\u003e Center. Hours: 24 Hours, 7 days a week 24/7 \u003cb\u003efitness\u003c/b\u003e \u003cbr\u003e\nroom available for all hotel in house guests with up-to-date equipment.",
+      cacheId: "W-dkmMqUzCcJ",
+      formattedUrl:
+        "https://www.marriott.com/.../fitness.../caieg-cairo-marriott-hotel-and-omar- khayyam-casino/",
+      htmlFormattedUrl:
+        "https://www.marriott.com/.../\u003cb\u003efitness\u003c/b\u003e.../caieg-\u003cb\u003ecairo\u003c/b\u003e-marriott-hotel-and-omar- khayyam-casino/",
+      pagemap: {
+        cse_thumbnail: [
+          {
+            src:
+              "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTmOk1Md2SdgB5isbMQ86uhS72dpBZsJ6QXdAi-sXGkvZSBTTbydvjBcm10",
+            width: "355",
+            height: "142",
+          },
+        ],
+        metatags: [
+          {
+            "msapplication-tilecolor": "#9D102D",
+            "og:image":
+              "https://cache.marriott.com/marriottassets/marriott/MC/mc-fitness-0001-hor-feat.jpg",
+            "apple-itunes-app": "app-id=455004730",
+            "og:type": "website",
+            "og:site_name": "Marriott International",
+            "og:title": "Cairo Marriott Hotel & Omar Khayyam Casino",
+            "applicable-device": "pc,mobile",
+            "msapplication-tileimage":
+              "https://cache.marriott.com/Images/Mobile/MC_Logos/MarriottWin8Icon.png",
+            "geo.position": "30.057162;31.224314",
+            "og:description":
+              "With a fully-equipped gym, updated swimming pool and brand new spa, Cairo Marriott Hotel & Omar Khayyam Casino makes it easier to stay fit while you travel.",
+            "fb:app_id": "143602039041041",
+            viewport: "width=device-width, initial-scale=1, maximum-scale=1",
+            "og:url":
+              "https://www.marriott.com/hotels/hotel-information/fitness-center/caieg-cairo-marriott-hotel-and-omar-khayyam-casino/",
+          },
+        ],
+        cse_image: [
+          {
+            src:
+              "https://cache.marriott.com/marriottassets/marriott/MC/mc-fitness-0001-hor-feat.jpg",
+          },
+        ],
+      },
+    },
+    {
+      kind: "customsearch#result",
+      title: "American Dojo Martial Arts & Fitness Center - Town of Cairo",
+      htmlTitle:
+        "American Dojo Martial Arts &amp; \u003cb\u003eFitness\u003c/b\u003e Center - Town of \u003cb\u003eCairo\u003c/b\u003e",
+      link: "https://townofcairo.com/shop-dine/business/?id=1915",
+      displayLink: "townofcairo.com",
+      snippet:
+        "American Dojo Martial Arts & Fitness Center. 518-622-9211. 7485 State Route 32\n, Cairo, NY 12413. Follow us on: Facebook. Martial arts and fitness center for ...",
+      htmlSnippet:
+        "American Dojo Martial Arts &amp; \u003cb\u003eFitness\u003c/b\u003e Center. 518-622-9211. 7485 State Route 32\u003cbr\u003e\n, \u003cb\u003eCairo\u003c/b\u003e, NY 12413. Follow us on: Facebook. Martial arts and \u003cb\u003efitness\u003c/b\u003e center for&nbsp;...",
+      cacheId: "pBtHTyUdl2sJ",
+      formattedUrl: "https://townofcairo.com/shop-dine/business/?id=1915",
+      htmlFormattedUrl:
+        "https://townof\u003cb\u003ecairo\u003c/b\u003e.com/shop-dine/business/?id=1915",
+      pagemap: {
+        cse_thumbnail: [
+          {
+            src:
+              "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRIB-_fsyE7-NHHfA2SlHLtzw1R0qZ4Gxw9felSQNKgDuZi5aGVBWazK1I1",
+            width: "283",
+            height: "178",
+          },
+        ],
+        metatags: [
+          {
+            "og:image":
+              "https://townofcairo.com/wp-content/uploads/2015/10/logo.png",
+            "og:type": "article",
+            "og:image:width": "320",
+            "twitter:card": "summary",
+            "og:site_name": "Town of Cairo",
+            "og:title":
+              "American Dojo Martial Arts & Fitness Center | Local Business in Cairo, NY",
+            "og:image:height": "201",
+            bingbot:
+              "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+            "msapplication-tileimage":
+              "https://townofcairo.com/wp-content/uploads/2020/08/cairo.png",
+            "og:description":
+              "Martial arts and fitness center for ages 4 and up.",
+            viewport: "width=device-width, initial-scale=1.0",
+            "og:locale": "en_US",
+            "og:url": "https://townofcairo.com/shop-dine/business/?id=1915",
+          },
+        ],
+        cse_image: [
+          {
+            src: "https://townofcairo.com/wp-content/uploads/2015/10/logo.png",
+          },
+        ],
+      },
+    },
+    {
+      kind: "customsearch#result",
+      title:
+        "Fitness & Recreation Services | The Westin Cairo Golf Resort & Spa ...",
+      htmlTitle:
+        "\u003cb\u003eFitness\u003c/b\u003e &amp; Recreation Services | The Westin \u003cb\u003eCairo\u003c/b\u003e Golf Resort &amp; Spa ...",
+      link:
+        "https://www.marriott.com/hotels/hotel-information/fitness-center/details/caiwi-the-westin-cairo-golf-resort-and-spa-katameya-dunes/5981616/",
+      displayLink: "www.marriott.com",
+      snippet:
+        "View details of fitness & recreation options at The Westin Cairo Golf Resort & Spa\n, Katameya Dunes. Our Cairo fitness facilities help you stick to your routine.",
+      htmlSnippet:
+        "View details of \u003cb\u003efitness\u003c/b\u003e &amp; recreation options at The Westin \u003cb\u003eCairo\u003c/b\u003e Golf Resort &amp; Spa\u003cbr\u003e\n, Katameya Dunes. Our \u003cb\u003eCairo fitness\u003c/b\u003e facilities help you stick to your routine.",
+      cacheId: "pg8Qgbwn8acJ",
+      formattedUrl:
+        "https://www.marriott.com/hotels/hotel.../fitness...the...cairo.../5981616/",
+      htmlFormattedUrl:
+        "https://www.marriott.com/hotels/hotel.../\u003cb\u003efitness\u003c/b\u003e...the...\u003cb\u003ecairo\u003c/b\u003e.../5981616/",
+      pagemap: {
+        cse_thumbnail: [
+          {
+            src:
+              "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRSoWsA7SP8BZhp69fuuhHRJUETJX9xRTR3L8GD9dwaVWlkUkyjClVvPFg",
+            width: "355",
+            height: "142",
+          },
+        ],
+        metatags: [
+          {
+            "msapplication-tilecolor": "#9D102D",
+            "og:image":
+              "https://cache.marriott.com/marriottassets/marriott/CAIWI/caiwi-outdoor-pool-7024-hor-feat.jpg",
+            "apple-itunes-app": "app-id=455004730",
+            "og:type": "website",
+            "og:site_name": "Marriott International",
+            "og:title": "The Westin Cairo Golf Resort & Spa, Katameya Dunes",
+            "applicable-device": "pc,mobile",
+            "msapplication-tileimage":
+              "https://cache.marriott.com/Images/Mobile/MC_Logos/MarriottWin8Icon.png",
+            "geo.position": "30.003261;31.52115",
+            "og:description":
+              "View details of fitness & recreation options at The Westin Cairo Golf Resort & Spa, Katameya Dunes. Our Cairo fitness facilities help you stick to your routine.",
+            "fb:app_id": "143602039041041",
+            viewport: "width=device-width, initial-scale=1, maximum-scale=1",
+            "og:url":
+              "https://www.marriott.com/hotels/hotel-information/fitness-center/details/caiwi-the-westin-cairo-golf-resort-and-spa-katameya-dunes/5981616/",
+          },
+        ],
+        cse_image: [
+          {
+            src:
+              "https://cache.marriott.com/marriottassets/marriott/CAIWI/caiwi-outdoor-pool-7024-hor-feat.jpg",
+          },
+        ],
+      },
+    },
+    {
+      kind: "customsearch#result",
+      title: "10 Excellent Gyms in Cairo - Top 10 Cairo",
+      htmlTitle:
+        "10 Excellent \u003cb\u003eGyms in Cairo\u003c/b\u003e - Top 10 \u003cb\u003eCairo\u003c/b\u003e",
+      link: "https://top10cairo.com/10-excellent-gyms-in-cairo/",
+      displayLink: "top10cairo.com",
+      snippet:
+        "10 Excellent Gyms in Cairo · 1Powerhouse Gym · 2Eight Fitness Club · 3Gold's \nGym · 4Smart Gym · 5Body Shapers · 6Pro Center Health Club · 7True Gym · 8\nSamia ...",
+      htmlSnippet:
+        "10 Excellent \u003cb\u003eGyms in Cairo\u003c/b\u003e &middot; 1Powerhouse \u003cb\u003eGym\u003c/b\u003e &middot; 2Eight \u003cb\u003eFitness\u003c/b\u003e Club &middot; 3Gold&#39;s \u003cbr\u003e\n\u003cb\u003eGym\u003c/b\u003e &middot; 4Smart \u003cb\u003eGym\u003c/b\u003e &middot; 5Body Shapers &middot; 6Pro Center Health Club &middot; 7True \u003cb\u003eGym\u003c/b\u003e &middot; 8\u003cbr\u003e\nSamia&nbsp;...",
+      cacheId: "1DoVdDuijpoJ",
+      formattedUrl: "https://top10cairo.com/10-excellent-gyms-in-cairo/",
+      htmlFormattedUrl:
+        "https://top10\u003cb\u003ecairo\u003c/b\u003e.com/10-excellent-\u003cb\u003egyms-in-cairo\u003c/b\u003e/",
+      pagemap: {
+        hcard: [
+          {
+            fn: "Top 10 Cairo",
+          },
+        ],
+        cse_thumbnail: [
+          {
+            src:
+              "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSuUeM__a--Crbf6fdW-WsFMXSJgb37nMjeIOeTTjrTeAMzyD6cGgCxl07V",
+            width: "311",
+            height: "162",
+          },
+        ],
+        imageobject: [
+          {
+            url:
+              "http://top10cairo.com/wp-content/uploads/2015/11/top10caironormallogo.png",
+          },
+          {
+            width: "1000",
+            url:
+              "https://top10cairo.com/wp-content/uploads/2015/12/10-excellent-gyms-in-cairo.jpg",
+            height: "523",
+          },
+        ],
+        person: [
+          {
+            name: "Top 10 Cairo",
+          },
+        ],
+        organization: [
+          {
+            name: "Top 10 Cairo",
+          },
+        ],
+        metatags: [
+          {
+            "og:image":
+              "https://top10cairo.com/wp-content/uploads/2015/12/10-excellent-gyms-in-cairo.jpg",
+            "og:type": "article",
+            "article:published_time": "2015-12-13T11:16:47+00:00",
+            "og:image:width": "1000",
+            "twitter:card": "summary",
+            "og:site_name": "Top 10 Cairo",
+            "og:title": "10 Excellent Gyms in Cairo - Top 10 Cairo",
+            "og:image:height": "523",
+            "twitter:label1": "Written by",
+            "twitter:label2": "Est. reading time",
+            "msapplication-tileimage":
+              "https://top10cairo.com/wp-content/uploads/2019/09/cropped-Favicon-512x512-2-270x270.png",
+            "og:description":
+              "Find the best gyms in Cairo to help you achieve your fitness goals with Top 10 Cairo's guide to the best gyms and fitness centers in Cairo.",
+            "article:publisher": "https://www.facebook.com/top10cairo/",
+            "twitter:data1": "Top 10 Cairo",
+            "twitter:data2": "5 minutes",
+            "article:modified_time": "2019-09-08T11:51:10+00:00",
+            viewport: "width=device-width, initial-scale=1.0",
+            "og:locale": "en_US",
+            "og:url": "https://top10cairo.com/10-excellent-gyms-in-cairo/",
+          },
+        ],
+        cse_image: [
+          {
+            src:
+              "https://top10cairo.com/wp-content/uploads/2015/12/10-excellent-gyms-in-cairo.jpg",
+          },
+        ],
+        article: [
+          {
+            datemodified: "2019-09-08T13:51:10+02:00",
+            headline: "10 Excellent Gyms in Cairo",
+            datepublished: "2015-12-13T13:16:47+02:00",
+          },
+        ],
+      },
+    },
+    {
+      kind: "customsearch#result",
+      title: "Accountable Fitness and Nutrition - Home | Facebook",
+      htmlTitle:
+        "Accountable \u003cb\u003eFitness\u003c/b\u003e and Nutrition - Home | Facebook",
+      link: "https://www.facebook.com/accountable.fitness/",
+      displayLink: "www.facebook.com",
+      snippet:
+        "Accountable Fitness and Nutrition, Cairo, New York. 922 likes · 37 talking about \nthis · 305 were here. The mission of Accountable Fitness and Nutrition...",
+      htmlSnippet:
+        "Accountable \u003cb\u003eFitness\u003c/b\u003e and Nutrition, \u003cb\u003eCairo\u003c/b\u003e, New York. 922 likes · 37 talking about \u003cbr\u003e\nthis · 305 were here. The mission of Accountable \u003cb\u003eFitness\u003c/b\u003e and Nutrition...",
+      cacheId: "I4R3SiUKB8EJ",
+      formattedUrl: "https://www.facebook.com/accountable.fitness/",
+      htmlFormattedUrl:
+        "https://www.facebook.com/accountable.\u003cb\u003efitness\u003c/b\u003e/",
+      pagemap: {
+        cse_thumbnail: [
+          {
+            src:
+              "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTO0ctc3bOHeGDKrsRZ28gAJDEMjaIJyhaP72lQSsCteNShz-LWBvPJh4s",
+            width: "225",
+            height: "225",
+          },
+        ],
+        metatags: [
+          {
+            "al:android:url": "fb://page/535082686626040?referrer=app_link",
+            referrer: "default",
+            "og:image":
+              "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=535082686626040",
+            "al:ios:app_name": "Facebook",
+            "og:title": "Accountable Fitness and Nutrition",
+            "al:android:package": "com.facebook.katana",
+            "al:ios:url": "fb://page/?id=535082686626040",
+            "og:url": "https://www.facebook.com/accountable.fitness/",
+            "og:description":
+              "Accountable Fitness and Nutrition, Cairo, New York. 922 likes · 37 talking about this · 305 were here. The mission of Accountable Fitness and Nutrition is to provide you with the tools to live a...",
+            "al:android:app_name": "Facebook",
+            "al:ios:app_store_id": "284882215",
+          },
+        ],
+        cse_image: [
+          {
+            src:
+              "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1198683560265946",
+          },
+        ],
+        listitem: [
+          {
+            item: "Places",
+            name: "Places",
+            position: "1",
+          },
+          {
+            item: "Cairo, New York",
+            name: "Cairo, New York",
+            position: "2",
+          },
+          {
+            item: "Fitness Trainer",
+            name: "Fitness Trainer",
+            position: "3",
+          },
+        ],
+      },
+    },
+    {
+      kind: "customsearch#result",
+      title: "23 Gyms in Cairo You Need to Know About - Scoop Empire",
+      htmlTitle:
+        "23 \u003cb\u003eGyms in Cairo\u003c/b\u003e You Need to Know About - Scoop Empire",
+      link: "https://scoopempire.com/22-gyms-in-egypt-you-need-to-know-about/",
+      displayLink: "scoopempire.com",
+      snippet:
+        "Dec 3, 2015 ... Here's a list of the top gyms in Egypt to help you tackle your fitness ... Branches: \nMaadi, Kattameya, Mohandiseen, Heliopolis, New Cairo",
+      htmlSnippet:
+        "Dec 3, 2015 \u003cb\u003e...\u003c/b\u003e Here&#39;s a list of the top \u003cb\u003egyms\u003c/b\u003e in Egypt to help you tackle your \u003cb\u003efitness\u003c/b\u003e ... Branches: \u003cbr\u003e\nMaadi, Kattameya, Mohandiseen, Heliopolis, New \u003cb\u003eCairo\u003c/b\u003e",
+      cacheId: "F6gVt02LsRMJ",
+      formattedUrl:
+        "https://scoopempire.com/22-gyms-in-egypt-you-need-to-know-about/",
+      htmlFormattedUrl:
+        "https://scoopempire.com/22-\u003cb\u003egyms\u003c/b\u003e-in-egypt-you-need-to-know-about/",
+      pagemap: {
+        cse_thumbnail: [
+          {
+            src:
+              "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRi_A3uJaVr85u4y6OxhwyhdlpGe17R0cQGL6kOvrhiaGuL-eG6HXCzV0Q",
+            width: "275",
+            height: "183",
+          },
+        ],
+        metatags: [
+          {
+            numberofitems: "3",
+            "og:image":
+              "https://scoopempire.com/wp-content/uploads/2015/12/Titans-Gym.jpg",
+            "article:published_time": "2015-12-03T12:00:20+00:00",
+            "og:image:width": "720",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "Scoop Empire",
+            "twitter:label1": "Written by",
+            "twitter:label2": "Est. reading time",
+            "og:description":
+              "We all know how the gym is a form of therapy, it is a second home, a place you go to unwind and relax, which makes it absolutely challenging to find the right one. Fortunately for us in Cairo, there are quite a few to choose from. So we saved you from the hassle of […]",
+            "twitter:creator": "@http://www.twitter.com/ScoopEmpire",
+            "article:publisher": "https://www.facebook.com/ScoopEmpire/",
+            "twitter:data1": "Scoop Team",
+            "twitter:data2": "4 minutes",
+            "twitter:site": "@scoopempire",
+            "article:modified_time": "2015-12-03T14:38:57+00:00",
+            itemlistorder: "Ascending",
+            "og:type": "article",
+            "og:title":
+              "23 Gyms in Cairo You Need to Know About - Scoop Empire",
+            "og:image:height": "480",
+            "fb:pages": "220580181373340",
+            "article:author": "http://www.facebook.com/ScoopEmpire",
+            "fb:app_id": "449157161784765",
+            viewport: "width=device-width, initial-scale=1.0",
+            onesignal: "wordpress-plugin",
+            "og:locale": "en_US",
+            "og:url":
+              "https://scoopempire.com/22-gyms-in-egypt-you-need-to-know-about/",
+          },
+        ],
+        cse_image: [
+          {
+            src:
+              "https://scoopempire.com/wp-content/uploads/2015/12/Titans-Gym.jpg",
+          },
+        ],
+        wpheader: [
+          {
+            url: "Scoop Empire - Your Middle East Urban Destination",
+          },
+        ],
+        wpadblock: [
+          {
+            url: "https://ar.scoopempire.com/",
+          },
+        ],
+        listitem: [
+          {
+            item: "Home",
+            name: "Home",
+            position: "1",
+          },
+          {
+            item: "Health",
+            name: "Health",
+            position: "2",
+          },
+          {
+            item:
+              "https://scoopempire.com/22-gyms-in-egypt-you-need-to-know-about/",
+            name: "23 Gyms in Cairo You Need to Know About",
+            position: "3",
+          },
+        ],
+      },
+    },
+    {
+      kind: "customsearch#result",
+      title: "Fitness For Life Cairo - Home | Facebook",
+      htmlTitle:
+        "\u003cb\u003eFitness\u003c/b\u003e For Life \u003cb\u003eCairo\u003c/b\u003e - Home | Facebook",
+      link: "https://www.facebook.com/FitnessForLifeCairo/",
+      displayLink: "www.facebook.com",
+      snippet:
+        "Fitness For Life Cairo. 235 likes · 92 were here. Never get so busy making a \nLIVING that you forget to make a LIFE! Note about Inclement Weather: If...",
+      htmlSnippet:
+        "\u003cb\u003eFitness\u003c/b\u003e For Life \u003cb\u003eCairo\u003c/b\u003e. 235 likes · 92 were here. Never get so busy making a \u003cbr\u003e\nLIVING that you forget to make a LIFE! Note about Inclement Weather: If...",
+      cacheId: "nrDqmfQcoNoJ",
+      formattedUrl: "https://www.facebook.com/FitnessForLifeCairo/",
+      htmlFormattedUrl:
+        "https://www.facebook.com/\u003cb\u003eFitness\u003c/b\u003eForLife\u003cb\u003eCairo\u003c/b\u003e/",
+      pagemap: {
+        cse_thumbnail: [
+          {
+            src:
+              "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRBzLnOXz805zjwiAahaCNByhJBfXcleIva8zeuUg5cnmc7CgYRZdRTWTfa",
+            width: "189",
+            height: "266",
+          },
+        ],
+        metatags: [
+          {
+            "al:android:url": "fb://page/1725053521152981?referrer=app_link",
+            referrer: "default",
+            "og:image":
+              "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1725053521152981",
+            "al:ios:app_name": "Facebook",
+            "og:title": "Fitness For Life Cairo",
+            "al:android:package": "com.facebook.katana",
+            "al:ios:url": "fb://page/?id=1725053521152981",
+            "og:url": "https://www.facebook.com/FitnessForLifeCairo/",
+            "og:description":
+              "Fitness For Life Cairo. 235 likes · 92 were here. Never get so busy making a LIVING that you forget to make a LIFE!\n\nNote about Inclement Weather:\n\nIf Cairo-Durham is closed, we are closed.\nIf...",
+            "al:android:app_name": "Facebook",
+            "al:ios:app_store_id": "284882215",
+          },
+        ],
+        cse_image: [
+          {
+            src:
+              "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=2883466901978298",
+          },
+        ],
+        listitem: [
+          {
+            item: "Places",
+            name: "Places",
+            position: "1",
+          },
+          {
+            item: "Cairo, New York",
+            name: "Cairo, New York",
+            position: "2",
+          },
+          {
+            item: "Sports & Fitness Instruction",
+            name: "Sports & Fitness Instruction",
+            position: "3",
+          },
+        ],
+      },
+    },
+    {
+      kind: "customsearch#result",
+      title: "Health and Fitness Amenities at Conrad Cairo",
+      htmlTitle:
+        "Health and \u003cb\u003eFitness\u003c/b\u003e Amenities at Conrad \u003cb\u003eCairo\u003c/b\u003e",
+      link:
+        "https://conradhotels3.hilton.com/en/hotels/egypt/conrad-cairo-CAICICI/amenities/spas-fitness.html",
+      displayLink: "conradhotels3.hilton.com",
+      snippet:
+        "The Conrad Cairo health club allows you to maintain your fitness regime with \nexclusive amenities and services in luxurious surroundings. With each visit ...",
+      htmlSnippet:
+        "The Conrad \u003cb\u003eCairo\u003c/b\u003e health club allows you to maintain your \u003cb\u003efitness\u003c/b\u003e regime with \u003cbr\u003e\nexclusive amenities and services in luxurious surroundings. With each visit&nbsp;...",
+      cacheId: "YKZW_14vBmsJ",
+      formattedUrl:
+        "https://conradhotels3.hilton.com/en/hotels/egypt/...cairo.../spas-fitness.html",
+      htmlFormattedUrl:
+        "https://conradhotels3.hilton.com/en/hotels/egypt/...\u003cb\u003ecairo\u003c/b\u003e.../spas-\u003cb\u003efitness\u003c/b\u003e.html",
+      pagemap: {
+        cse_thumbnail: [
+          {
+            src:
+              "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRX_oV1FjXHRuq7QNBlzuqBCePFai4drKhR3uw9KG4pwKdbGjQCjINt1g",
+            width: "200",
+            height: "95",
+          },
+        ],
+        metatags: [
+          {
+            "og:image":
+              "https://conradhotels3.hilton.com/skins/en_US/CH/img/logo_brand_CH.png",
+            "og:type": "website",
+            "fb:app_id": "253862148111843",
+            "og:site_name": "Conrad",
+            "og:title": "Conrad Cairo",
+            "geo.position": "30.065466;31.227559",
+            "og:url":
+              "https://conradhotels3.hilton.com/en/hotels/egypt/conrad-cairo-CAICICI/amenities/spas-fitness.html",
+            "og:description":
+              "Make the most of your stay in Cairo. Enjoy a wealth of luxury services and amenities offered at Conrad Cairo hotel.",
+          },
+        ],
+        cse_image: [
+          {
+            src:
+              "https://conradhotels3.hilton.com/skins/en_US/CH/img/logo_brand-CH.png",
+          },
+        ],
+      },
+    },
+    {
+      kind: "customsearch#result",
+      title: "Cairo Strength - Home | Facebook",
+      htmlTitle: "\u003cb\u003eCairo\u003c/b\u003e Strength - Home | Facebook",
+      link: "https://www.facebook.com/cairostrength/",
+      displayLink: "www.facebook.com",
+      snippet:
+        "Cairo Strength, Cairo, Egypt. 1024 likes. Cairo Strength is a personal training \nspace in Cairo, Egypt. Our goal is to make you ... Gym/Physical Fitness Center.",
+      htmlSnippet:
+        "\u003cb\u003eCairo\u003c/b\u003e Strength, \u003cb\u003eCairo\u003c/b\u003e, Egypt. 1024 likes. \u003cb\u003eCairo\u003c/b\u003e Strength is a personal training \u003cbr\u003e\nspace in \u003cb\u003eCairo\u003c/b\u003e, Egypt. Our goal is to make you ... \u003cb\u003eGym\u003c/b\u003e/Physical \u003cb\u003eFitness\u003c/b\u003e Center.",
+      cacheId: "ASjyD9L8wDcJ",
+      formattedUrl: "https://www.facebook.com/cairostrength/",
+      htmlFormattedUrl:
+        "https://www.facebook.com/\u003cb\u003ecairo\u003c/b\u003estrength/",
+      pagemap: {
+        cse_thumbnail: [
+          {
+            src:
+              "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRq-2K-79STm30yU7CNABhfI-z30wSQx4yHLcgB4NpvmF5_v0x_m_kv1Gk",
+            width: "275",
+            height: "183",
+          },
+        ],
+        metatags: [
+          {
+            "al:android:url": "fb://page/130035374362942?referrer=app_link",
+            referrer: "default",
+            "og:image":
+              "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=130035374362942",
+            "al:ios:app_name": "Facebook",
+            "og:title": "Cairo Strength",
+            "al:android:package": "com.facebook.katana",
+            "al:ios:url": "fb://page/?id=130035374362942",
+            "og:url": "https://www.facebook.com/cairostrength/",
+            "og:description":
+              "Cairo Strength, Cairo, Egypt. 1,024 likes. Cairo Strength is a personal training space in Cairo, Egypt. Our goal is to make you strong and to create a space where everybody, and every body, feels...",
+            "al:android:app_name": "Facebook",
+            "al:ios:app_store_id": "284882215",
+          },
+        ],
+        cse_image: [
+          {
+            src:
+              "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=509555726410903",
+          },
+        ],
+      },
+    },
+  ],
+};

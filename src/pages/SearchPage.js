@@ -1,19 +1,19 @@
 import useGoogleSearch from "../useGoogleSearch";
-import { actingResponse, angerManagementResponse } from "../response";
+import {
+  actingResponse,
+  angerManagementResponse,
+  gymResponse,
+} from "../response";
 import { useStateValue } from "../StateProvider";
 import "./SearchPage.css";
 import { Link } from "react-router-dom";
 import Search from "../components/Search";
 import {
-  Description,
   DescriptionOutlined,
-  Image,
   ImageOutlined,
-  LocalOffer,
   LocalOfferOutlined,
   MoreVert,
   RoomOutlined,
-  RoomRounded,
   SearchRounded,
 } from "@material-ui/icons";
 import { useEffect } from "react";
@@ -25,13 +25,14 @@ function SearchPage() {
   // const { data } = useGoogleSearch(term);
 
   // fake
-  var flag = term === null || term[0] == "و";
+
   var data = {};
-  if (flag) data = actingResponse;
+  if (term === null || term[0] === "و") data = actingResponse;
+  else if (term[0] === " ") data = gymResponse;
   else data = angerManagementResponse;
 
   useEffect(() => {
-    document.title = term;
+    document.title = term || "Google";
   }, [term]);
   console.log(data);
   return (
@@ -97,18 +98,19 @@ function SearchPage() {
             About {data?.searchInformation.formattedTotalResults} results (
             {data?.searchInformation.formattedSearchTime} seconds)
           </p>
-          {flag ? (
+
+          {data === actingResponse && (
             <div className="searchPage__result">
               <a href="/ahmed_roushdy.html" className="searchPage__resultLink">
                 www.facebook.com &#8250; Acting School
               </a>
-              {/* <Link
-                to="/ahmed_roushdy.html"
-                target="_blank"
+              <a
+                href="/ahmed_roushdy.html"
+                // target="_blank"
                 className="searchPage__resultTitle"
               >
                 <h2>أحمد رشدي - Home | Facebook</h2>
-              </Link> */}
+              </a>
               <p className="searchPage__resultSnippet">
                 أحمد رشدي ممثل ومخرج مصري خريج المعهد العالي للفنون المسرحية
                 بالقاهرة، أخرج العديد من المسرحيات التي عرضت على خشبات مسارح
@@ -116,17 +118,19 @@ function SearchPage() {
                 "مصير الأربعين" ويعمل الآن كمدرب للمواهب الفنية
               </p>
             </div>
-          ) : (
+          )}
+
+          {data === angerManagementResponse && (
             <div className="searchPage__result">
               <a
-                href="https://www.thepeacefuldragon.com/can-martial-arts-help-with-anger-management-and-aggression-issues/"
+                href="/peaceful_dragon.html"
                 className="searchPage__resultLink"
               >
                 thepeacefuldragon.com &#8250; Martial Arts School
               </a>
               <a
-                href="https://www.thepeacefuldragon.com/can-martial-arts-help-with-anger-management-and-aggression-issues/"
-                target="_blank"
+                href="/peaceful_dragon.html"
+                // target="_blank"
                 className="searchPage__resultTitle"
               >
                 <h2>Can Martial Arts Help with Anger Management?</h2>
@@ -138,17 +142,39 @@ function SearchPage() {
               </p>
             </div>
           )}
-          {data?.items.map((item) => (
+
+          {data === gymResponse && (
             <div className="searchPage__result">
               <a
-                target="_blank"
+                href="/marsgym.html"
+                className="searchPage__resultLink"
+              >
+                facebook.com &#8250; Local Gym
+              </a>
+              <a
+                href="/marsgym.html"
+                // target="_blank"
+                className="searchPage__resultTitle"
+              >
+                <h2>MARS GYM | Facebook</h2>
+              </a>
+              <p className="searchPage__resultSnippet">
+                99,841 people like this - We strive to make you the best athlete you can be.
+              </p>
+            </div>
+          )}
+
+          {data?.items.map((item) => (
+            <div key={item.cacheId} className="searchPage__result">
+              <a
+                // target="_blank"
                 href={item.link}
                 className="searchPage__resultLink"
               >
                 {item.displayLink}
               </a>
               <a
-                target="_blank"
+                // target="_blank"
                 href={item.link}
                 className="searchPage__resultTitle"
               >
