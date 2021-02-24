@@ -123,13 +123,13 @@ function SearchPage() {
           {data === angerManagementResponse && (
             <div className="searchPage__result">
               <a
-                href="/peaceful_dragon.html"
+                href="https://www.thepeacefuldragon.com/can-martial-arts-help-with-anger-management-and-aggression-issues/"
                 className="searchPage__resultLink"
               >
                 thepeacefuldragon.com &#8250; Martial Arts School
               </a>
               <a
-                href="/peaceful_dragon.html"
+                href="https://www.thepeacefuldragon.com/can-martial-arts-help-with-anger-management-and-aggression-issues/"
                 // target="_blank"
                 className="searchPage__resultTitle"
               >
@@ -145,10 +145,7 @@ function SearchPage() {
 
           {data === gymResponse && (
             <div className="searchPage__result">
-              <a
-                href="/marsgym.html"
-                className="searchPage__resultLink"
-              >
+              <a href="/marsgym.html" className="searchPage__resultLink">
                 facebook.com &#8250; Local Gym
               </a>
               <a
@@ -159,7 +156,8 @@ function SearchPage() {
                 <h2>MARS GYM | Facebook</h2>
               </a>
               <p className="searchPage__resultSnippet">
-                99,841 people like this - We strive to make you the best athlete you can be.
+                99,841 people like this - We strive to make you the best athlete
+                you can be.
               </p>
             </div>
           )}
