@@ -55,13 +55,13 @@ function SearchPage() {
               </div>
 
               <div className="searchPage__option">
-                <DescriptionOutlined />
-                <Link to="/news">News</Link>
+                <ImageOutlined />
+                <Link to="/images">Images</Link>
               </div>
 
               <div className="searchPage__option">
-                <ImageOutlined />
-                <Link to="/images">Images</Link>
+                <DescriptionOutlined />
+                <Link to="/news">News</Link>
               </div>
 
               <div className="searchPage__option">

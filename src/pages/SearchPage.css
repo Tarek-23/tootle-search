@@ -1,3 +1,7 @@
+.searchPage {
+  width: 100vw;
+}
+
 .searchPage__header {
   display: flex;
   align-items: flex-start;
@@ -8,8 +12,9 @@
 
   background-color: white;
   padding: 24px;
+  padding-top: 1.2rem;
   padding-bottom: 0;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid #ebebeb;
 }
 
 .searchPage__logo {
@@ -44,7 +49,7 @@
 .searchPage__options a,
 .searchPage__optionsR a {
   text-decoration: none;
-  color: grey;
+  color: #5f6368;
 }
 
 .searchPage__optionsR {
@@ -54,31 +59,40 @@
 .searchPage__option {
   display: flex;
   align-items: center;
-  margin: 16px 12px 12px 10px;
+  padding: 20px 12px 12px 10px;
 
   font-size: 13px;
 }
 
-/* .searchPage__option--active {
-  border-bottom: 2px solid blue;
-} */
+.searchPage__option--active {
+  border-bottom: 3px solid #1a73e8;
+  color: #1a73e8;
+}
+
+.searchPage__option--active > a {
+  color: #1a73e8;
+}
 
 .searchPage__option a {
   margin-left: 5px;
 }
 
-.searchPage__results {
-  max-width: 650px;
-  margin: 20px 0px 100px 190px;
+.searchPage__option > .MuiSvgIcon-root {
+  font-size: 1.2rem;
 }
 
-.searchPage__result {
-  margin: 28px 0;
+.searchPage__results {
+  max-width: 650px;
+  margin: 16px 0px 100px 190px;
 }
 
 .searchPage__resultCount {
   color: #70757a;
   font-size: 14px;
+}
+
+.searchPage__result {
+  margin: 20px 0;
 }
 
 .searchPage__resultLink {
@@ -95,8 +109,13 @@
   text-decoration: underline;
 }
 
+.searchPage__resultTitle:link {
+  color: #1a0dab;
+}
+
+/* To retake shots */
 .searchPage__resultTitle:visited {
-  color: blue;
+  color: #1a0dab;
 }
 
 .searchPage__resultTitle > h2 {
