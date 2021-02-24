@@ -1,40 +1,50 @@
 import { Button } from "@material-ui/core";
-import { MicRounded, SearchRounded } from "@material-ui/icons";
-import React, { useRef, useState } from "react";
+import { ClearRounded, MicRounded, SearchRounded } from "@material-ui/icons";
+import React, { useState } from "react";
 import { useHistory } from "react-router";
 import { actionTypes } from "../reducer";
 import { useStateValue } from "../StateProvider";
 import "./Search.css";
 
 function Search({ hideButtons = false, initialValue }) {
-  const [{}, dispatch] = useStateValue();
+  const [term, dispatch] = useStateValue();
 
-  const inputRef = useRef("");
+  const [query, setQuery] = useState("");
   const history = useHistory();
 
   const search = (e) => {
     e.preventDefault();
 
-    console.log("You searched ", inputRef.current);
+    console.log("You searched ", query);
 
-    if (inputRef.current !== null) {
+    if (query.current !== null) {
       dispatch({
         type: actionTypes.SET_SEARCH_TERM,
-        term: inputRef.current,
+        term: query,
       });
     }
 
     history.push("/search");
   };
+
+  const onClear = () => {
+    setQuery("");
+  };
+
   return (
     <form className="search">
       <div className="search__input">
-        <SearchRounded className="search__inputIcon" />
         <input
-          ref={inputRef}
-          onChange={(e) => (inputRef.current = e.target.value)}
+          onChange={(e) => setQuery(e.target.value)}
+          value={query}
+          // placeholder={term}
         />
-        <MicRounded className="search__inputIcon" />
+
+        <ClearRounded className="search__inputClear" onClick={onClear} />
+        <div className="search__inputIcons">
+          <MicRounded className="search__inputIcon" />
+          <SearchRounded className="search__inputIcon" />
+        </div>
       </div>
 
       <div

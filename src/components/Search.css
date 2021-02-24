@@ -13,15 +13,36 @@
   border-radius: 24px;
 }
 
-.search__inputIcon {
+.search__input:hover {
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+}
+
+.search__inputIcons {
+  border-left: 1px solid hsla(0, 0%, 83%, 0.815);
+  padding-left: 5px;
+  margin-bottom: 2px;
+}
+
+.search__inputClear {
+  cursor: pointer;
   color: grey;
+
+  margin-right: 1rem;
+  padding-bottom: 5px;
+}
+
+.search__inputIcon {
+  color: #1a73e8;
   font-size: large;
+  margin-right: 5px;
+  margin-left: 5px;
+  line-height: 1.2rem;
 }
 
 .search__input > input {
   flex: 1;
 
-  padding: 10px 20px;
+  padding: 8px 10px 10px;
 
   font-size: medium;
   color: var(--text-black);
