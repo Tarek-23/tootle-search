@@ -10,6 +10,7 @@
 
 # production
 /build
+/firebase
 .firebaserc
 firebase.json
 firebase-debug.log
@@ -27,8 +28,6 @@ yarn-error.log*
 
 
 public/Peaceful_Dragon.html
-public/marsgym.html
 public/ahmed_roushdy.html
 public/Ahmed_roushdy.html
 public/marsgym.html
-.firebase/hosting.YnVpbGQ.cache
