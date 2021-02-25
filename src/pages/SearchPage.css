@@ -35,6 +35,10 @@
   height: 39px;
 }
 
+.searchPage__headerBody > .search > .searchInput > .search__inputIcons {
+  margin-bottom: 2px;
+}
+
 .searchPage__options {
   display: flex;
   align-items: center;
@@ -131,3 +135,9 @@
 
   line-height: 22.12px;
 }
+
+/* @media (max-width: 400px) {
+  .searchPage {
+    width: 100vw;
+  }
+} */

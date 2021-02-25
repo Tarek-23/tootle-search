@@ -6,8 +6,8 @@ import { actionTypes } from "../reducer";
 import { useStateValue } from "../StateProvider";
 import "./Search.css";
 
-function Search({ hideButtons = false, initialValue }) {
-  const [term, dispatch] = useStateValue();
+function Search({ hideButtons: searchPage = false, initialValue }) {
+  const [{ term }, dispatch] = useStateValue();
 
   const [query, setQuery] = useState("");
   const history = useHistory();
@@ -34,22 +34,34 @@ function Search({ hideButtons = false, initialValue }) {
   return (
     <form className="search">
       <div className="search__input">
+        {!searchPage && (
+          <SearchRounded
+            style={{
+              color: "#9aa0a6",
+              fontSize: "x-large",
+              paddingBottom: "3px",
+            }}
+          />
+        )}
         <input
           onChange={(e) => setQuery(e.target.value)}
           value={query}
-          // placeholder={term}
+          placeholder={term}
         />
 
-        <ClearRounded className="search__inputClear" onClick={onClear} />
+        {query && (
+          <ClearRounded className="search__inputClear" onClick={onClear} />
+        )}
+
         <div className="search__inputIcons">
           <MicRounded className="search__inputIcon" />
-          <SearchRounded className="search__inputIcon" />
+          {searchPage && <SearchRounded className="search__inputIcon" />}
         </div>
       </div>
 
       <div
         className={
-          "search__buttons" + (hideButtons ? " search__buttons--hidden" : "")
+          "search__buttons" + (searchPage ? " search__buttons--hidden" : "")
         }
       >
         <Button type="submit" variant="outlined" onClick={search}>

@@ -24,7 +24,7 @@ function Home() {
           {/* Icon */}
           <Apps />
           {/* Avatar */}
-          <Avatar />
+          <Avatar style={{ height: "32px", width: "32px" }} />
         </div>
       </div>
 

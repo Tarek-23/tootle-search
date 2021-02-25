@@ -1,6 +1,7 @@
 .home {
   display: flex;
   flex-direction: column;
+  padding: 0 10px;
 }
 
 .home__header {
@@ -8,14 +9,14 @@
   justify-content: space-between;
   align-items: center;
 
-  padding: 20px 30px;
+  padding: 14px 10px 10px;
 }
 
 .home__header a {
   margin-right: 20px;
 
   color: rgba(0, 0, 0, 0.87);
-  font-size: 15px;
+  font-size: 13px;
   text-decoration: inherit;
 }
 
@@ -41,11 +42,11 @@
 .home__body {
   display: flex;
   flex: 1;
-  margin-top: 10%;
+  margin-top: 8%;
   flex-direction: column;
 }
 
 .home__body > img {
   object-fit: contain;
-  height: 100px;
+  height: 92px;
 }
